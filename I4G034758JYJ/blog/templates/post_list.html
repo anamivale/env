@@ -1,5 +1,5 @@
-{% block content %} {% for film in film_list %} {% for colname in
-film.column_set.all %}
+{% extends 'base.html' %} {% block content %} {% for film in film_list %} {% for
+colname in film.column_set.all %}
 <p>{{colname}}</p>
 {% endfor %}
 
