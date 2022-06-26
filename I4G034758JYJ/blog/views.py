@@ -8,7 +8,7 @@ from django.views import generic
 
 class PostListView(generic.ListView):
     model = Post
-    template_name = 'templates/post_list.html'
+    template_name = 'post_list.html'
 
 
 class PostCreateView(generic.CreateView):
