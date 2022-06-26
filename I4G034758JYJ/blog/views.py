@@ -15,23 +15,23 @@ class PostCreateView(generic.CreateView):
     model: Post
     fields = "__all__"
     success_url = reverse_lazy("blog: all")
-    template_name = 'templates/post_form.html'
+    template_name = 'post_form.html'
 
 
 class PostDetailView(generic.DetailView):
     model = Post
-    template_name = 'templates/post_details.html'
+    template_name = 'post_details.html'
 
 
 class PostUpdateView(generic.UpdateView):
     model: Post
     fields = "__all__"
     success_url = reverse_lazy("blog: all")
-    template_name = 'templates/post_form.html'
+    template_name = 'post_form.html'
 
 
 class PostDeleteView(generic.DeleteView):
     model: Post
     fields = "__all__"
     success_url = reverse_lazy("blog: all")
-    template_name = 'templates/post_confirm_delete.html'
+    template_name = 'post_confirm_delete.html'
